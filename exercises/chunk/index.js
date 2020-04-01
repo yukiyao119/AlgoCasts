@@ -13,6 +13,7 @@ function chunk(array, size) {
   let result = []
   while(i<array.length){
     result.push(array.slice(i, i+size))
+    i += size
   }
   return result
 }
